@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books Store</title> 
+  <link rel="stylesheet" href="reset.css"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <header class="cabecalho"> 
+    <div class="container">  
+      <input type="checkbox" id=menu class="container_botao"> 
+      <label for="menu"> 
+        <span class="cabecalho_menu-hamburguer container_imagem"></span> 
+      </label> 
+      <ul class="lista_menu"> 
+        <li class="lista_menu_titulo">Categorias</li>
+        <li class="lista_menu_item">
+          <a href="#" class="lista_menu_link">Programação</a>
+        </li> 
+        <li class="lista_menu_item">
+          <a href="#" class="lista_menu_link">Front-End</a>
+        </li> 
+        <li class="lista_menu_item">
+          <a href="#" class="lista_menu_link">Infraestrutura</a>
+        </li> 
+        <li class="lista_menu_item">
+          <a href="#" class="lista_menu_link">Business</a>
+        </li> 
+        <li class="lista_menu_item">
+          <a href="#" class="lista_menu_link">Design & UX</a>
+        </li>
+      </ul>
+      <img  class="container_imagem" src="./assets/logobooks.svg" alt="Logo IT Books"> 
+    </div> 
+    <div class="container"> 
+      <a href="#"><img class="container_imagem" src="./assets/favoritos.svg" alt="Meus favoritos"></a> 
+      <a href="#"><img class="container_imagem" src="./assets/sacola.svg" alt="Sacola de compras"></a> 
+      <a href="#"><img class="container_imagem" src="./assets/perfil.svg" alt="Meu perfil"></a>
+    </div>
+  </header>
+  <main>
+    <section class="banner"> 
+      <h2 class="banner_titulo">Já sabe por onde começar?</h2>
+      <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p> 
+      <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section> 
+    <section class="carrossel"> 
+      <h2 class="carrossel_titulo">Últimos Lançamentos</h2>  
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+  </main> 
+  <footer>
+
+  </footer> 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
+</html>
