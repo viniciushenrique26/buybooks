@@ -1,87 +1,142 @@
 .carrossel_titulo {
-  color: var(--orange-color);  
-  background: white; 
-  text-align: center; 
-  text-transform: uppercases; 
-  font-size: 18px; 
-  font-weight: 700; 
+  color: var(--orange-color);
+  background: white;
+  text-align: center;
+  text-transform: uppercases;
+  font-size: 18px;
+  font-weight: 700;
   padding: 1em 0 0.5em 0;
+}
 
-} 
-
-.swiper-slide img{
+.swiper-slide img {
   width: 100%;
-} 
+}
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   display: none;
-} 
+}
 
 .swiper-pagination {
-  position: initial; 
-  margin: 0.5em 0 ;
-} 
+  position: initial;
+  margin: 0.5em 0;
+}
 
 .card_descricao {
-  display: flex; 
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 0.5em;
-} 
+}
 
 .card_botoes {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
 }
 
 .botoes {
   display: flex;
-} 
+}
 
 .card {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px; 
-  padding: 1em; 
+  border-radius: 10px;
+  padding: 1em;
   margin: 1em;
-} 
+}
 
-.descricao_titulo { 
-  color: var(--orange-color); 
+.descricao_titulo {
+  color: var(--orange-color);
   font-weight: 700;
-} 
+}
 
 .descricao_titulo-livro {
-  color: #002F52; 
-  font-size: 18px; 
-  font-weight: 700; 
+  color: #002f52;
+  font-size: 18px;
+  font-weight: 700;
   margin: 0.5em 0;
-} 
+}
 
 .descricao_texto {
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: 400;
 }
 .botoes_ancora {
-  background: #EB9B00; 
-  font-size: 1em; 
-  font-weight: 700; 
-  color: #FFFFFF; 
-  text-decoration: none; 
-  padding: 1em 2.2em; 
-} 
+  background: #eb9b00;
+  font-size: 1em;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1em 2.2em;
+}
 .botoes {
-  align-items: center; 
+  align-items: center;
 }
 .botoes_item {
-  margin: 0 0.5em; 
-  width: 3em; 
-} 
+  margin: 0 0.5em;
+  width: 3em;
+}
 
 .avaliacao_card {
-  margin:1em 0 0.2em 0;
-} 
+  margin: 1em 0 0.2em 0;
+}
 
 .imagem_escritora {
-  margin: 1em 0 0 1em ; 
+  margin: 1em 0 0 1em;
   width: 160px;
+}
+
+@media screen and (min-width: 1024px) {
+  .carrossel_titulo {
+    font-size: 26px;
+  }
+
+  .swiper-pagination {
+    margin: 2em 0 3em 0;
+  }
+
+  .swiper {
+    width: 60%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    top: 60%;
+  }
+
+  .card {
+    width: 40%;
+    margin: 2em auto;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .carrossel_container {
+    display: flex;
+    margin: 0 20vw 3em 20vw;
+    align-items: center;
+  }
+
+  .swiper-pagination {
+    margin: 1em 0;
+  }
+  .swiper {
+    width: 50%;
+  }
+
+  .descricao_titulo {
+    font-size: 32px;
+  }
+
+  .descricao_texto {
+    font-size: 16px;
+  }
+  .descricao {
+    margin-right: 2em;
+  }
+  .card {
+    width: 60%;
+    margin-left: 3em;
+  }
 }
